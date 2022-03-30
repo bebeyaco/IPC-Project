@@ -1,0 +1,57 @@
+
+*****************************************************************************
+                        Assignment 1 - Milestone 1
+Full Name  : Carlos Enrique Gonzalez Leon
+Student ID#: 154179212
+Email      : cgonzalez-leon@myseneca.ca
+Section    : ZEE
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1.- From the core functions library, what function was the most challenging 
+to define and clearly describe the challenge(s) including how you managed 
+to overcome them in the context of the methods used in preparing your logic,
+debugging, and testing.
+
+The inputCString function was the most difficult in the whole code. the most
+ challenging part was to find the right logic to output the correct message 
+ for each of the lengths. Since the error which says that the string must be 
+ exactly some amount of chars is very similar to the one which says that the
+ string length must be between a certain number of characters, they made the
+ logic get confused because it would crash my program when I had more than 
+ the selected amount of characters. I solved this by dividing them into two 
+ sections: the ones which have the nim and max characters the same, and the 
+ ones that the min and max characters are different. This solution helped me
+ to prevent the logic from clashing with itself.
+
+2.- It is good practice to initialize variables to a "safe empty state".
+With respect to variable initialization, what is the difference between 
+assigning 0 and NULL? When do you use one over the other and why?
+
+Initializing variables to a safe empty state is always a good practice since
+ it helps to avoid using the same variable for multiple problems. The 
+ problem with using one variable to solve multiple problems instead of 
+ setting a safe empty state is that it can make the code get confused with
+ which value it should take. For pointers, NULL is always better to use 
+ since it is a value that can be used with pointers to compare them, but 
+ for int variables, 0 is always good because it is also an int variable.
+
+ 3.- Your friend (also a beginner programmer) is having difficulty 
+understanding how to manage the "standard input buffer" (particularly when
+there is residual data). Your friend has read all the course notes, Googled
+the topic, followed along with course lectures about this topic, but is 
+still struggling with this concept. Describe exactly how you would attempt to help
+your friend understand this topic?
+
+Since they already have read the course notes and researched on google, I would
+ assume that they have vague knowledge about the topic. I would tear apart how 
+ the standard input buffer works. Using the school lectures, I would explain to 
+ him how each part works, then, if they can still not understand, explaining with
+ pears and apples can be the best solution. I would say that the tree is the user
+ input, a box is a buffer, and the shelf is the output. The apples are entered 
+ into the box, which is used to store all the apples for future use, then the
+ farmer takes the apples in the same order that he put them in the box, and 
+ stores them on the shelf.

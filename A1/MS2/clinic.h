@@ -32,8 +32,8 @@ piece of work is entirely of my own creation.
 
 // C Strings: array sizes
 #define NAME_LEN 15
-#define PHONE_DESC_LEN 4
-#define PHONE_LEN 10
+#define PHONE_DESC_LEN 5
+#define PHONE_LEN 11
 
 
 //////////////////////////////////////
@@ -41,12 +41,20 @@ piece of work is entirely of my own creation.
 //////////////////////////////////////
 
 // Data type: Phone
-// ToDo:
+struct Phone
+{
+    char description[PHONE_DESC_LEN];
+    char number[PHONE_LEN];
+};
 
 
 // Data type: Patient 
-// ToDo:
-
+struct Patient
+{
+    int patientNumber;
+    char name[NAME_LEN];
+    struct Phone phone;
+};
 
 // ClinicData type: Provided to student
 // !!! DO NOT MODIFY THIS DATA TYPE !!!
